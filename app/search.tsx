@@ -90,6 +90,7 @@ export default function SearchPage({
                 ¿Buscar de nuevo?
               </button>
             </span>
+            {fallback && <p>Buscando...</p>}
             <ul className="flex gap-4 my-4 w-full flex-col">
               {posts.map((post) => (
                 <li key={post.id} className="w-full">
